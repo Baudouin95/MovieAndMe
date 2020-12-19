@@ -9,7 +9,7 @@ class MovieApplication : Application(){
         super.onCreate()
         startKoin {
             androidContext(this@MovieApplication)
-            modules(presentaionModule)
+            modules(presentaionModule, domainModule, dataModule)
         }
     }
 }
